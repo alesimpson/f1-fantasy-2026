@@ -1,0 +1,145 @@
+/* Retro F1 color scheme */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+table {
+  border: 2px solid red;
+  margin: 20px auto;
+  width: 80%;
+  color: white;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid red;
+  padding: 8px;
+  text-align: left;
+}
+
+.tables-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.left-table,
+.right-table {
+  width: 45%;
+}
+
+.register-section {
+  margin-bottom: 20px;
+}
+
+.reset-section {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 6px;
+  font-family: inherit;
+  background: #111;
+  color: white;
+  border: 1px solid red;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+/* Leaderboard */
+#leaderboard table {
+  width: 50%;
+}
+
+/* Race-by-race table horizontal scroll */
+.race-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0;
+}
+
+.race-table-container table {
+  width: max-content !important;
+  table-layout: auto;
+  margin: 0 auto;
+}
+
+/* Trade section */
+.trade-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.trade-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.trade-col label {
+  font-weight: bold;
+}
+
+.trade-col select[multiple] {
+  width: 100%;
+  min-height: 140px;
+}
+
+/* ASCII car */
+.ascii-car-green {
+  color: limegreen;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .tables-container {
+    display: block;
+  }
+  .left-table,
+  .right-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .trade-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
